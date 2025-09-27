@@ -44,3 +44,79 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# Robles de la Laguna – Gestión de Clientes, Citas y Pagos, Reportes
+
+Esta aplicación permite registrar clientes, agendar citas con fecha y hora, registrar pagos, y generar reportes visuales por cliente. Está diseñada para gestiones de venta de propiedades o administrativos que necesitan control profesional de atención y cobros.
+
+## Requisitos
+Node.js v22
+
+Visual Studio Code
+
+GitHub Desktop
+
+Navegador moderno (Chrome, Edge, Firefox)
+
+## Instrucciones
+Crear el repositorio en GitHub.
+
+Clonar el proyecto con GitHub Desktop.
+
+Abrir en Visual Studio Code.
+
+Instalar dependencias:
+```
+ npm init
+ ```
+  ```
+npm install express sweetalert2 bootstrap
+ ```
+
+ Ejecutar Frontend:
+ npm start
+
+
+ Se han incluido ejemplos de añadir 
+ una cita, pago
+ **Appointments.tsx**
+
+ ```json 
+ [{
+  id: 1,
+  nombre: "Daniela Flores",
+  fecha: "2025-09-26",
+  hora: "07:54",
+  notas: "Consulta general"
+}] 
+
+ ```
+```json
+[ {
+  id: 1,
+  nombre: "Daniela Flores",
+  monto: 2500,
+  fecha: "2025-09-26"
+}]
+```
+## Herramientas utilizadas
+
+React + TypeScript – Frontend 
+
+Node.js + Express – Backend con rutas y controladores
+
+SweetAlert2 – Alertas interactivas
+
+Bootstrap Icons – Íconos visuales
+
+fs/promises – Lectura y escritura de archivos .json
+
+GitHub Desktop 
+
+[Referencia GitTub Desktop](https://github.com/desktop)
+
+![Logo GitTub Desktop](https://avatars.githubusercontent.com/u/13171334?s=200&v=4)
+
+
+
+
