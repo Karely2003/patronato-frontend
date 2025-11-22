@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/patronato-frontend/static/css/main.2e37c27c.css",
+    "main.js": "/patronato-frontend/static/js/main.14cc1930.js",
+    "static/media/bootstrap-icons.woff?": "/patronato-frontend/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/bootstrap-icons.woff2?": "/patronato-frontend/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "static/media/logo.png.jpg": "/patronato-frontend/static/media/logo.png.93759ac4c9a2c9aac2da.jpg",
+    "static/media/poppins-devanagari-400-normal.woff": "/patronato-frontend/static/media/poppins-devanagari-400-normal.421fe9869ff4b58e2d7b.woff",
+    "static/media/poppins-devanagari-400-normal.woff2": "/patronato-frontend/static/media/poppins-devanagari-400-normal.d2ee5e6ea17bffe3bf58.woff2",
+    "static/media/poppins-latin-400-normal.woff": "/patronato-frontend/static/media/poppins-latin-400-normal.1458587c0aa7cd06b82b.woff",
+    "static/media/poppins-latin-400-normal.woff2": "/patronato-frontend/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-latin-ext-400-normal.woff": "/patronato-frontend/static/media/poppins-latin-ext-400-normal.7e12786771ac4a8e6a5c.woff",
+    "static/media/poppins-latin-ext-400-normal.woff2": "/patronato-frontend/static/media/poppins-latin-ext-400-normal.d7c074a9c34fe9785f69.woff2",
+    "index.html": "/patronato-frontend/index.html",
+    "main.2e37c27c.css.map": "/patronato-frontend/static/css/main.2e37c27c.css.map",
+    "main.14cc1930.js.map": "/patronato-frontend/static/js/main.14cc1930.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e37c27c.css",
+    "static/js/main.14cc1930.js"
+  ]
+}
