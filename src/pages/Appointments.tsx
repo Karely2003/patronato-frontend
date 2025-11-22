@@ -54,7 +54,7 @@ const Appointments: React.FC<AppointmentsProps> = ({ toggleSidebar }) => {
 
   const fetchClientes = async () => {
     try {
-      const res = await fetch('http://localhost:3001/clientes');
+     const res = await fetch('https://backend-production-e10c.up.railway.app/clientes');
       const data = await res.json();
       setClientes(data.data);
     } catch (err) {
@@ -79,8 +79,8 @@ const Appointments: React.FC<AppointmentsProps> = ({ toggleSidebar }) => {
 
     try {
       const url = editingId !== null
-        ? `http://localhost:3001/citas/edit/${editingId}`
-        : 'http://localhost:3001/citas/register';
+        ? `https://backend-production-e10c.up.railway.app/citas/edit/${editingId}`
+        : 'https://backend-production-e10c.up.railway.app/citas/register';
 
       const method = editingId !== null ? 'PUT' : 'POST';
 
