@@ -18,7 +18,7 @@ const Login: React.FC = () => {
     }
 
     try {
-      const res = await fetch('http://localhost:3001/users/login', {
+      const res = await fetch('https://backend-production-e10c.up.railway.app/users/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
