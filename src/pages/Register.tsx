@@ -58,7 +58,7 @@ const Register: React.FC = () => {
   // Envío al backend
   const sendData = async () => {
     try {
-      const res = await fetch('http://localhost:3001/users/register', {
+      const res = await fetch('https://backend-production-e10c.up.railway.app/users/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(objData),
