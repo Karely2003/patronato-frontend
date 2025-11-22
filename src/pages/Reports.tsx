@@ -24,7 +24,7 @@ const Reports: React.FC<ReportsProps> = ({ toggleSidebar }) => {
   const recordsPerPage = 25;
 
   useEffect(() => {
-    fetch('http://localhost:3001/reportes/clientes-resumen')
+    fetch('https://backend-production-e10c.up.railway.app/reportes/clientes-resumen')
       .then(res => res.json())
       .then(data => setReporte(data.data))
       .catch(err => console.error('Error al cargar reporte:', err));
