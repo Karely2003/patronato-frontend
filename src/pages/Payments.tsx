@@ -39,7 +39,7 @@ const Payments: React.FC<PaymentsProps> = ({ toggleSidebar }) => {
 
   const fetchPayments = async () => {
     try {
-      const res = await fetch('http://localhost:3001/pagos');
+      const res = await fetch('https://backend-production-e10c.up.railway.app/pagos');
       const data = await res.json();
       setPayments(data.data);
     } catch (err) {
@@ -49,7 +49,7 @@ const Payments: React.FC<PaymentsProps> = ({ toggleSidebar }) => {
 
   const fetchClientes = async () => {
     try {
-      const res = await fetch('http://localhost:3001/clientes');
+      const res = await fetch('https://backend-production-e10c.up.railway.app/clientes');
       const data = await res.json();
       setClientes(data.data);
     } catch (err) {
@@ -98,8 +98,8 @@ const Payments: React.FC<PaymentsProps> = ({ toggleSidebar }) => {
       const payload = { nombre, monto: montoNum, fecha };
 
       const url = editingId !== null
-        ? `http://localhost:3001/pagos/edit/${editingId}`
-        : 'http://localhost:3001/pagos/register';
+        ? `https://backend-production-e10c.up.railway.app/pagos/edit/${editingId}`
+        : 'https://backend-production-e10c.up.railway.app/pagos/register';
 
       const method = editingId !== null ? 'PUT' : 'POST';
 
