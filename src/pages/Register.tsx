@@ -169,7 +169,7 @@ const Register: React.FC = () => {
               name="email"
               value={objData.email}
               onChange={handleChange}
-              placeholder="hola@correo.com"
+              placeholder="karen123@correo.com"
             />
             {errors.email && <div className="invalid-feedback">{errors.email}</div>}
           </div>

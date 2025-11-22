@@ -113,7 +113,7 @@ const Reports: React.FC<ReportsProps> = ({ toggleSidebar }) => {
                         <th><i className="bi bi-wallet2 me-1"></i>Nº Pagos</th>
                         <th><i className="bi bi-calendar-event me-1"></i>Nº Citas</th>
                         <th><i className="bi bi-calendar-date me-1"></i>Última Cita</th>
-                        <th><i className="bi bi-calendar2-week me-1"></i>¿Tiene próxima?</th>
+                        <th><i className="bi bi-calendar2-week me-1"></i>Tengo Cita</th>
                       </tr>
                     </thead>
                     <tbody>
