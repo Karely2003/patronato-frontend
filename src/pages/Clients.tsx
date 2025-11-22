@@ -39,7 +39,7 @@ const Clients: React.FC<ClientsProps> = ({ toggleSidebar }) => {
 
   const fetchClients = async () => {
     try {
-      const res = await fetch('http://localhost:3001/clientes');
+      const res = await fetch('https://backend-production-e10c.up.railway.app/clientes');
       const data = await res.json();
 
       const simulated = Array.from({ length: 42 }, (_, i) => ({
@@ -118,8 +118,8 @@ const Clients: React.FC<ClientsProps> = ({ toggleSidebar }) => {
     try {
       const url =
         editingId !== null
-          ? `http://localhost:3001/clientes/edit/${editingId}`
-          : 'http://localhost:3001/clientes/register';
+          ? `https://backend-production-e10c.up.railway.app/clientes/edit/${editingId}`
+          : 'https://backend-production-e10c.up.railway.app/clientes/register';
       const method = editingId !== null ? 'PUT' : 'POST';
 
       const res = await fetch(url, {
