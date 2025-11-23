@@ -18,37 +18,37 @@ import Reports from './pages/Reports';
 import Logout from './pages/Logout';
 
 // Componentes wrapper que incluyen el sidebar
-const DashboardLayout = ({ toggleSidebar }: { toggleSidebar: () => void }) => (
+const DashboardLayout = ({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: () => void }) => (
   <div className="d-flex">
-    <Sidebar isOpen={false} toggleSidebar={toggleSidebar} />
+    <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     <Dashboard toggleSidebar={toggleSidebar} />
   </div>
 );
 
-const ClientsLayout = ({ toggleSidebar }: { toggleSidebar: () => void }) => (
+const ClientsLayout = ({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: () => void }) => (
   <div className="d-flex">
-    <Sidebar isOpen={false} toggleSidebar={toggleSidebar} />
+    <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     <Clients toggleSidebar={toggleSidebar} />
   </div>
 );
 
-const PaymentsLayout = ({ toggleSidebar }: { toggleSidebar: () => void }) => (
+const PaymentsLayout = ({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: () => void }) => (
   <div className="d-flex">
-    <Sidebar isOpen={false} toggleSidebar={toggleSidebar} />
+    <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     <Payments />
   </div>
 );
 
-const AppointmentsLayout = ({ toggleSidebar }: { toggleSidebar: () => void }) => (
+const AppointmentsLayout = ({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: () => void }) => (
   <div className="d-flex">
-    <Sidebar isOpen={false} toggleSidebar={toggleSidebar} />
+    <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     <Appointments />
   </div>
 );
 
-const ReportsLayout = ({ toggleSidebar }: { toggleSidebar: () => void }) => (
+const ReportsLayout = ({ isOpen, toggleSidebar }: { isOpen: boolean, toggleSidebar: () => void }) => (
   <div className="d-flex">
-    <Sidebar isOpen={false} toggleSidebar={toggleSidebar} />
+    <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     <Reports />
   </div>
 );
@@ -69,27 +69,27 @@ function App() {
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard" element={
             <PrivateRoute>
-              <DashboardLayout toggleSidebar={toggleSidebar} />
+              <DashboardLayout isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
             </PrivateRoute>
           } />
           <Route path="/clients" element={
             <PrivateRoute>
-              <ClientsLayout toggleSidebar={toggleSidebar} />
+              <ClientsLayout isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
             </PrivateRoute>
           } />
           <Route path="/payments" element={
             <PrivateRoute>
-              <PaymentsLayout toggleSidebar={toggleSidebar} />
+              <PaymentsLayout isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
             </PrivateRoute>
           } />
           <Route path="/appointments" element={
             <PrivateRoute>
-              <AppointmentsLayout toggleSidebar={toggleSidebar} />
+              <AppointmentsLayout isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
             </PrivateRoute>
           } />
           <Route path="/reports" element={
             <PrivateRoute>
-              <ReportsLayout toggleSidebar={toggleSidebar} />
+              <ReportsLayout isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
             </PrivateRoute>
           } />
           <Route path="/logout" element={<PrivateRoute><Logout /></PrivateRoute>} />
